@@ -16,14 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        createMoodyContainer { container in
-            self.persistentContainer = container
-            let storyboard = self.window?.rootViewController?.storyboard
-            guard let vc = storyboard?.instantiateViewController(withIdentifier: "RootViewController") as? RootViewController
-                else { fatalError("Cannot instantiate root view controller") }
-            vc.managedObjectContext = container.viewContext
-            self.window?.rootViewController = vc
+        
+        self.persistentContainer = createMoodyContainer()
+
+        if let rootVC = window?.rootViewController as? RootViewController {
+            rootVC.managedObjectContext = self.persistentContainer.viewContext
         }
+        
         return true
     }
 }
