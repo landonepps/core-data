@@ -58,7 +58,7 @@ class RegionsTableViewController: UITableViewController, SegueHandler {
     fileprivate var dataSource: TableViewDataSource<NSFetchRequestResult, RegionsTableViewController>!
 
     fileprivate func setupTableView() {
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 44
         tableView.delegate = self
         setupDataSource()

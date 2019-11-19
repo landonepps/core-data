@@ -31,7 +31,7 @@ class MoodsContainerViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        for vc in segue.destination.childViewControllers {
+        for vc in segue.destination.children {
             guard let moodsPresenter = vc as? MoodsPresenter else { fatalError("expected moods presenter") }
             moodsPresenter.managedObjectContext = managedObjectContext
             moodsPresenter.moodSource = moodSource
@@ -46,7 +46,7 @@ class MoodsContainerViewController: UIViewController {
     // MARK: Private
 
     fileprivate var tabController: UITabBarController {
-        guard let tc = childViewControllers.first as? UITabBarController else { fatalError("expected tab bar controller") }
+        guard let tc = children.first as? UITabBarController else { fatalError("expected tab bar controller") }
         return tc
     }
 

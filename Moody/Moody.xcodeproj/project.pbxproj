@@ -901,13 +901,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = objc.io;
 				TargetAttributes = {
 					174495471AFB62A0007C9A75 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = 58PSC9526Y;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1120;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -921,34 +921,34 @@
 					176699831B8338B100AC71A8 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = 58PSC9526Y;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1120;
 					};
 					17BA09871BA1752800AE1BA5 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = 58PSC9526Y;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1120;
 					};
 					3E7CD9751B11E1050008FE1F = {
 						CreatedOnToolsVersion = 6.3.2;
 						DevelopmentTeam = 58PSC9526Y;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1120;
 					};
 					3E7CD97F1B11E1060008FE1F = {
 						CreatedOnToolsVersion = 6.3.2;
 						DevelopmentTeam = 58PSC9526Y;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1120;
 						TestTargetID = 174495471AFB62A0007C9A75;
 					};
 					3E7CD9A61B11E1A20008FE1F = {
 						CreatedOnToolsVersion = 6.3.2;
 						DevelopmentTeam = 58PSC9526Y;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
 			buildConfigurationList = 174495431AFB62A0007C9A75 /* Build configuration list for PBXProject "Moody" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
@@ -1262,6 +1262,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
 		};
@@ -1272,7 +1273,7 @@
 				DEVELOPMENT_TEAM = 58PSC9526Y;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.objc.CoreDataMoody;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1283,7 +1284,7 @@
 				DEVELOPMENT_TEAM = 58PSC9526Y;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.objc.CoreDataMoody;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1293,7 +1294,7 @@
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 58PSC9526Y;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1303,7 +1304,7 @@
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 58PSC9526Y;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1349,7 +1350,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1387,7 +1388,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.objc.MoodyModelTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1398,7 +1399,7 @@
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 58PSC9526Y;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1408,7 +1409,7 @@
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 58PSC9526Y;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1417,7 +1418,7 @@
 			baseConfigurationReference = 3E931C541B9C242300A1BA4C /* Test-Target.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 58PSC9526Y;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1426,7 +1427,7 @@
 			baseConfigurationReference = 3E931C541B9C242300A1BA4C /* Test-Target.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 58PSC9526Y;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1442,7 +1443,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1457,7 +1458,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

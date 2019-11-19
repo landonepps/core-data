@@ -123,6 +123,8 @@ class TableViewDataSource<Result: NSFetchRequestResult, Delegate: TableViewDataS
         case .delete:
             guard let indexPath = indexPath else { fatalError("Index path should be not nil") }
             tableView.deleteRows(at: [indexPath], with: .fade)
+        @unknown default:
+            fatalError("Error: New NSFetchedResultsChangeType case added.")
         }
     }
 

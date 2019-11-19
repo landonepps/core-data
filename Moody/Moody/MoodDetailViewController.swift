@@ -58,7 +58,7 @@ class MoodDetailViewController: UIViewController {
         map.addAnnotation(annotation)
         map.selectAnnotation(annotation, animated: false)
         map.setCenter(annotation.coordinate, animated: false)
-        map.setRegion(MKCoordinateRegionMakeWithDistance(annotation.coordinate, 2e6, 2e6), animated: false)
+        map.setRegion(MKCoordinateRegion.init(center: annotation.coordinate, latitudinalMeters: 2e6, longitudinalMeters: 2e6), animated: false)
     }
 
 }

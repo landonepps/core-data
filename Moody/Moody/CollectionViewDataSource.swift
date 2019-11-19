@@ -115,6 +115,8 @@ class CollectionViewDataSource<Delegate: CollectionViewDataSourceDelegate>: NSOb
         case .delete:
             guard let indexPath = indexPath else { fatalError("Index path should be not nil") }
             updates.append(.delete(indexPath))
+        @unknown default:
+            fatalError("Error: New NSFetchedResultsChangeType added.")
         }
     }
 
