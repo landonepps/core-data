@@ -87,15 +87,15 @@ extension CameraViewController: CaptureSessionDelegate {
 
 
 extension CameraViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: Any]) {
-        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+        
+        if let image = info[.originalImage] as? UIImage {
             delegate.didCapture(image)
         }
         dismiss(animated: true, completion: nil)
         imagePicker = nil
     }
-
+    
 }
-
 

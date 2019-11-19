@@ -30,7 +30,7 @@ public extension UIImage {
     :returns: A list of dominant colors in the image sorted from most dominant to
               least dominant.
     */
-    public func dominantColors(_ options: DominantColorOptions = .Default) -> AnyIterator<UIColor> {
+    func dominantColors(_ options: DominantColorOptions = .Default) -> AnyIterator<UIColor> {
         guard let cgImage = cgImage else { fatalError("Can't convert to CGImage") }
         let colors = cgImage.dominantColors(options)
         return AnyIterator { () -> UIColor? in

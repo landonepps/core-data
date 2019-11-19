@@ -97,6 +97,8 @@ class TableViewDataSource<Delegate: TableViewDataSourceDelegate>: NSObject, UITa
         case .delete:
             guard let indexPath = indexPath else { fatalError("Index path should be not nil") }
             tableView.deleteRows(at: [indexPath], with: .fade)
+        @unknown default:
+            fatalError("Error: New NSFetchedResultsChangeType added.")
         }
     }
 
